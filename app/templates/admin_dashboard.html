@@ -1,0 +1,55 @@
+{% extends "home.html" %}
+
+{% block content %}
+<div class="dashboard-content">
+    <h2>Admin Dashboard</h2>
+    <p>Manage users and system settings</p>
+    
+    <!-- Add admin-specific dashboard content here -->
+    <div class="user-management">
+        <h3>User Management</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Joined</th>
+                    <th>Last Login</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>john_doe</td>
+                    <td>john@example.com</td>
+                    <td>Jan 15, 2025</td>
+                    <td>Mar 10, 2025</td>
+                    <td><span style="color: #4CAF50;">Active</span></td>
+                    <td>
+                        <div class="file-actions">
+                            <button class="action-btn" title="Edit User">✏️</button>
+                            <button class="action-btn" title="Suspend User">⏸️</button>
+                            <button class="action-btn" title="Delete User">🗑️</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>sarahsmith</td>
+                    <td>sarah@example.com</td>
+                    <td>Feb 1, 2025</td>
+                    <td>Mar 12, 2025</td>
+                    <td><span style="color: #FF9800;">Suspended</span></td>
+                    <td>
+                        <div class="file-actions">
+                            <button class="action-btn" title="Edit User">✏️</button>
+                            <button class="action-btn" title="Reactivate">▶️</button>
+                            <button class="action-btn" title="Delete User">🗑️</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
