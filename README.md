@@ -1,4 +1,4 @@
-# Transcription and Summary PDF Generator
+# voice to text summarisation
 
 This project transcribes audio files and generates a summary of the transcriptions, then compiles both into a downloadable PDF document. The system uses NLTK for text processing and ReportLab for PDF generation.
 
